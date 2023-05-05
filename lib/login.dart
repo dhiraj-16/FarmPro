@@ -243,6 +243,9 @@ class loginpage extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10),
                               )),
                         ),
+                        SizedBox(
+                          height: 40,
+                        ),
                         ElevatedButton(
                             onPressed: () async {
                               try {
@@ -261,6 +264,23 @@ class loginpage extends StatelessWidget {
                               }
                             },
                             child: Text('Log In')),
+                        SizedBox(
+                          height: 50,
+                        ),
+                        ElevatedButton(
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'register');
+                          },
+                          child: Text(
+                            'Register',
+                            textAlign: TextAlign.left,
+                            style: TextStyle(
+                                decoration: TextDecoration.underline,
+                                color: Colors.white,
+                                fontSize: 18),
+                          ),
+                          style: ButtonStyle(),
+                        ),
                       ],
                     ),
                   ),

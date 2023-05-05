@@ -17,7 +17,7 @@ void main() async {
       'home': (context) => homepage(),
       'login': (context) => loginpage(),
       'register': (context) => MyRegister(),
-      'home1': (context) => MyHome()
+      'home1': (context) => MyHome(),
     },
   ));
 }
